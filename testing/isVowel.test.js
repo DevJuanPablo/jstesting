@@ -1,5 +1,6 @@
 const isVowel = char => {
-  'aeiou'.includes(char)
+  return 'aeiou'.includes(char)
 }
+
 
 export {isVowel}
