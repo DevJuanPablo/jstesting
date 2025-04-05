@@ -1,4 +1,4 @@
-const isVowel = char => {
+const isVowel = char => { 
   return 'aeiou'.includes(char)
 }
 
