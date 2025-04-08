@@ -1,3 +1,5 @@
-test('Verificar que 1 es igual a 1', () => {
-  expect(1 === 2).toBeTruthy()
+const nombres = ['Adrian', 'Cintia', 'Adriel', 'Cinthia']
+
+test('Queremos verificar que el nombre Adriel se encuentre en el array', () => {
+  expect(new Set(nombres)).toContain('Adriel')
 })
