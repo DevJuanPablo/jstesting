@@ -1,5 +1,5 @@
 // Archivo principal
-import  { isVowel }  from "./isVowel.test.js"
+import  { isVowel }  from "./isVowel.spec.js"
 import assert from 'node:assert'
 
 console.assert(isVowel('b', 'b no es una vocal'))
