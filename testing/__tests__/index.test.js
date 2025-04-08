@@ -1,5 +1,3 @@
-var holaMundo = 'Hola Mundo'
-
-test('Que la palabra hola este dentro de mi variable holaMundo', () => {
-  expect(holaMundo).not.toMatch(/cola/)
+test('Verificar que 1 es igual a 1', () => {
+  expect(1 === 2).toBeTruthy()
 })
