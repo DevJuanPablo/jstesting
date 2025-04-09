@@ -8,9 +8,8 @@ const palindrome = word => {
   }) 
 }
 
-test('Quiero verificar que hola es igual a aloh', () => {
-  return palindrome('hola')
-    .then(str => {
-      expect(str).toBe('aloh')
-    })
+test('Quiero verificar que hola es igual a aloh', async () => {
+  const response = await palindrome('hola')
+
+  expect(response).toBe('aloh')
 })
