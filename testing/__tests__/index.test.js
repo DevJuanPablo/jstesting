@@ -1,5 +1,8 @@
-const nombres = ['Adrian', 'Cintia', 'Adriel', 'Cinthia']
+test('Quiero verificar la igualdad de un objeto', () => {
+  const obj = { one: 1 }
+  const objCompare = { one: 1 }
 
-test('Queremos verificar que el nombre Adriel se encuentre en el array', () => {
-  expect(new Set(nombres)).toContain('Adriel')
+  obj.two = 2
+
+  expect(obj).toEqual(objCompare)
 })
