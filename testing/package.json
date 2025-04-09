@@ -4,7 +4,8 @@
   "description": "Este es un proyecto para ver como funciona Jest.js",
   "main": "app.js",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "test:watch": "jest --watchAll"
   },
   "keywords": [
     "jest",
