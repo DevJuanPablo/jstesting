@@ -1,8 +1,8 @@
-test('Quiero verificar la igualdad de un objeto', () => {
-  const obj = { one: 1 }
-  const objCompare = { one: 1 }
+const palindrome = word => word
+  .split('')
+  .reverse()
+  .join('')
 
-  obj.two = 2
-
-  expect(obj).toEqual(objCompare)
+test('Quiero verificar que hola es igual a aloh', () => {
+  expect(palindrome('hola')).toBe('alo')
 })
