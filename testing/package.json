@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "jest --verbose",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [
     "jest",
