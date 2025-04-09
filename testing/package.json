@@ -4,7 +4,7 @@
   "description": "Este es un proyecto para ver como funciona Jest.js",
   "main": "app.js",
   "scripts": {
-    "test": "jest --verbose",
+    "test": "mocha",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage"
   },
@@ -16,7 +16,8 @@
   "author": "dev.juanpablo.ortiz@gmail.com",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "mocha": "^11.1.0"
   },
   "jest": {
     "testEnvironment": "node"
