@@ -1,6 +1,10 @@
 const assert = require('chai').assert
 const should = require('chai').should()
 const expect = require('chai').expect
+const chai = require('chai')
+const chaiAsPromised = require('chai-as-promised')
+
+chai.use(chaiAsPromised)
 
 describe('Mis ejemplos con chai', () => {
   it('validando que el numero 5 este en mi array', () => {
@@ -32,5 +36,9 @@ describe('Mis ejemplos con chai', () => {
     }
 
     expect(jwt).to.have.property('user')
+  })
+
+  it('Verificando promesas', () => {
+    return Promise.resolve(2 + 2).should.eventually.equal(4)
   })
 })
