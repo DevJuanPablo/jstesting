@@ -1,5 +1,6 @@
 const assert = require('chai').assert
 const should = require('chai').should()
+const expect = require('chai').expect
 
 describe('Mis ejemplos con chai', () => {
   it('validando que el numero 5 este en mi array', () => {
@@ -21,5 +22,15 @@ describe('Mis ejemplos con chai', () => {
     const holaMundo = 'hola mundo'
 
     holaMundo.should.be.a('string')
+  })
+
+  it('Validar la existencia de una propiedad de un objeto', () => {
+    const jwt = {
+      expireIn: new Date(),
+      user: 'Adrian',
+      server: 'server'
+    }
+
+    expect(jwt).to.have.property('user')
   })
 })
