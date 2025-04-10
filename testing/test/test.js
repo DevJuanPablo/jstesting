@@ -1,7 +1,7 @@
-import assert from 'node:assert'
+const assert = require('chai').assert
 
-describe('Mis ejemplos con mocha', () => {
+describe('Mis ejemplos con chai', () => {
   it('validando que el numero 5 este en mi array', () => {
-    assert.equal([1, 2, 3, 4, 5, 6].indexOf(0), -1)
+    assert.equal([1, 2, 3, 4, 5, 6].indexOf(0), 4)
   })
 })
