@@ -16,4 +16,10 @@ describe('Mis ejemplos con chai', () => {
 
     array.should.have.lengthOf(4)
   })
+
+  it('validando que holaMundo sea un string', () => {
+    const holaMundo = 'hola mundo'
+
+    holaMundo.should.be.a('string')
+  })
 })
